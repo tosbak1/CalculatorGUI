@@ -43,6 +43,11 @@ public class ModelTest extends TestCase{
 		cm.mul(a, b);
 		assertEquals(400, cm.getResult());
 	}
+	
+	@Test
+	public void testgetResult(){
+		assertEquals(0, cm.getResult());
+	}
 
 
 

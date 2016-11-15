@@ -36,6 +36,8 @@ public class CalModel extends Observable{
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		CalModel cm = new CalModel();
+		System.out.println(cm.getResult());
 	}
 
 }
