@@ -4,10 +4,16 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-public class ModelTest {
+import junit.framework.TestCase;
 
+public class ModelTest extends TestCase{
+	private CalModel cm;
+	private int a, b;
 	@Before
 	public void setUp() throws Exception {
+		cm = new CalModel();
+		a = 40;
+		b = 10;
 	}
 
 	@After
@@ -16,27 +22,28 @@ public class ModelTest {
 
 	@Test
 	public void testAdd() {
-		fail("Not yet implemented");
+		cm.add(a, b);
+		assertEquals(50, cm.getResult());
 	}
 
 	@Test
 	public void testSub() {
-		fail("Not yet implemented");
+		cm.sub(a, b);
+		assertEquals(30, cm.getResult());
 	}
 
 	@Test
 	public void testDiv() {
-		fail("Not yet implemented");
+		cm.div(a, b);
+		assertEquals(4, cm.getResult());
 	}
 
 	@Test
 	public void testMul() {
-		fail("Not yet implemented");
+		cm.mul(a, b);
+		assertEquals(400, cm.getResult());
 	}
 
-	@Test
-	public void testGetResult() {
-		fail("Not yet implemented");
-	}
+
 
 }
