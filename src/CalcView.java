@@ -48,6 +48,7 @@ public class CalcView extends JFrame implements Observer {
 		value2.setBorder(border);
 		result.setBorder(border);
 		
+		
 		value1.setEditable(true);
 		value2.setEditable(true);
 		result.setEditable(false);
@@ -106,6 +107,12 @@ public class CalcView extends JFrame implements Observer {
 	}
 	public String mul(){
 		return this.mul.getActionCommand();
+	}
+	
+	public static void main(String[] args){
+		CalModel cm = new CalModel();
+		CalcController a = new CalcController(cm);
+		CalcView cv = new CalcView(a);
 	}
 	
 	@Override

@@ -33,6 +33,7 @@ public class CalModel extends Observable{
 	public int getResult(){
 		return this.result;
 	}
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 	}
